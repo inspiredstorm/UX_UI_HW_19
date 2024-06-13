@@ -268,8 +268,8 @@ p, li {
 #upperVidBar, #lowerVidBar {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     height: 174px;
     width: 100%;
 }
@@ -298,7 +298,8 @@ p, li {
 }
 
 #videoButton {
-
+    position: relative;
+    top:25px;
 }
 
 /* Footer styles */
