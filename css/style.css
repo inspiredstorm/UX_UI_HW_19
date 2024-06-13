@@ -1,0 +1,342 @@
+@font-face {
+    font-family: calderDark;
+    src: url(../fonts/font.woff) 
+    }
+@font-face {
+    font-family: caliCoast;
+    src: url(../fonts/californiacoast-regular-webfont.woff);
+    }
+
+
+/* Global variables and styles */
+:root {
+    --minBlockWidth: 340px;
+    --cardRadius: 8px;
+    }
+
+p, li {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+  }
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  h1, h2 {
+    font-family: caliCoast;
+  }
+
+  h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    letter-spacing: 1px;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: calderDark;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+}
+
+/* Header and main nav styling */
+
+.logo {
+    height: 100px;
+    width: var(--minBlockWidth);
+    background: url(../images/default-fullname-logo.png) no-repeat center;
+    background-size: contain;
+}
+
+/* Hover logo is stacked on top of main logo with opacity at 0 */
+.logo-img-hover {
+    height: 100px;
+    width: var(--minBlockWidth);
+    background: url(../images/hover-fullname-logo.png no-repeat center);
+    background-size: contain;
+    opacity: 0;
+}
+
+/* On hover alternate logo is displayed by turning on opacity */
+.logo:hover .logo-img-hover{
+    opacity: 1;
+}
+
+
+.headerBox {
+    display: flex;
+    flex: 1 1 inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 2%;
+
+}
+
+.navItems {
+    width: var(--minBlockWidth);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Animated hero background */
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(../images/water-loop.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.backgroundWrap {
+    display:flex;
+    flex-basis:100%;
+    justify-content:flex-start;
+    align-items: center;
+    background-image: url(../images/color-background-orange-left.png);
+    opacity: 0.95;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textBlock {
+    width: var(--minBlockWidth);
+    margin: 36px 36px 36px 36px;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/* I think these are unnecessary 
+.text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    */
+
+/* Style for all section titles */
+.title {
+    text-align: center;
+}
+
+/* Projects section */
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-areas: 
+        'leftPad title title rightPad'
+        'leftPad card1 card2 rightPad'
+        'leftPad card3 card4 rightPad';
+
+    gap: 16px;
+    padding: 24px;
+}
+
+.projects img  {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.projects p {
+    margin-top: 0px;
+}
+
+.projects h5 {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.projectsTitle {
+    grid-area: title;
+}
+
+.project1 {
+    grid-area: card1;
+}
+
+.project2 {
+    grid-area: card2;
+}
+
+.project3 {
+    grid-area: card3;
+}
+
+.project4 {
+    grid-area: card4;
+}
+
+.project1, .project2, .project3, .project4 {
+    color: black;
+}
+
+.leftSpace {
+    grid-area: leftPad;
+    width: 10%;
+}
+
+.rightSpace {
+    grid-area: rightPad;
+    width: 10%
+}
+
+/* Skills section */
+
+.skills {
+    background-image: url(../images/color-background-gradient.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills .title {
+    color: white;
+}
+
+.cardBox {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-around;
+}
+
+.skillsCard {
+    display: flex;
+    flex-direction: column;
+    flex-basis: flex-start;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 12px;
+    padding: 16px;
+    width: 28%;
+    border-radius: var(--cardRadius);
+}
+
+.skillsCard h5 {
+    text-align: center;
+}
+
+.tools h5 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 16px #000000;
+}
+
+/* Footer styles */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AD531F;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: white;
+    min-width: var(--minBlockWidth);
+}
+
+#footerBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--minBlockWidth);
+}
+
+#footerLogo {
+    width: 80%;
+}
+
+.linkedin {
+    width: 44px;
+    margin-top: 16px;
+    
+}
+
+footer .navItems {
+    width: 80%;
+}
+
+/* Responsive design, breakpoint at 730px */
+@media only screen and (max-width: 730px) {
+    .headerBox {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 inherit;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navItems {
+        width: var(--minBlockWidth);
+        display: flex;
+        justify-content: space-between;
+        margin-top: -24px;
+    }
+
+    .cardBox {
+        display: flex;
+        flex-direction:  column;
+        justify-content: space-around;
+    }
+
+    .skillsCard {
+        width: 85%;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 5% 3fr 5%;
+        grid-template-areas: 
+            'leftPad title rightPad'
+            'leftPad card1 rightPad'
+            'leftPad card2 rightPad'
+            'leftPad card3 rightPad'
+            'leftPad card4 rightPad';
+    
+        gap: 16px;
+        padding: 24px;
+    }
+
+}
