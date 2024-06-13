@@ -132,17 +132,6 @@ p, li {
     line-height: 1.5;
 }
 
-/* I think these are unnecessary 
-.text p {
-    color: rgba(255, 255, 255, 0.7);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.text h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-    */
-
 /* Style for all section titles */
 .title {
     text-align: center;
@@ -258,6 +247,58 @@ p, li {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 16px #000000;
+}
+
+/* Behind the Scenes styles */
+
+.videoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.videoSection img {
+    width: 70vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: block;
+}
+
+#upperVidBar, #lowerVidBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 174px;
+    width: 100%;
+}
+
+#upperVidBar {
+    background-color: #F3BF68;
+    background-image: linear-gradient(#F3BF68, #C28F3D);
+}
+#lowerVidBar {
+    background-color: #F3BF68;
+    background-image: linear-gradient(#C28F3D, #F3BF68);
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+    width: 480px;
+    background-color: #AB2A45;
+    background-image: linear-gradient(#AF540D, #AB2A45);
+    color: white;
+    border-radius: 8px;
+
+}
+
+#videoButton {
+
 }
 
 /* Footer styles */
