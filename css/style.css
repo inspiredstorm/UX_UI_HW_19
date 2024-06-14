@@ -71,7 +71,7 @@ p, li {
 .logo-img-hover {
     height: 100px;
     width: var(--minBlockWidth);
-    background: url(../images/hover-fullname-logo.png no-repeat center);
+    background: url(../images/hover-fullname-logo.png) no-repeat center;
     background-size: contain;
     opacity: 0;
 }
