@@ -28,7 +28,8 @@ p, li {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 54px;
+    letter-spacing: 2px;
   }
 
   h2 {
@@ -141,14 +142,13 @@ p, li {
 
 .textBlock h1 {
     line-height: 0;
-    letter-spacing: 1px;
 }
 
 #overlay {
     position: absolute;
     width: 505px;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px var(--cardRadius) var(--cardRadius);
     top: 200px;
     left: 44px;
@@ -336,7 +336,7 @@ p, li {
 .button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 52px;
     width: 480px;
     background-color: #AB2A45;
@@ -344,6 +344,10 @@ p, li {
     color: white;
     border-radius: 8px;
 
+}
+
+#buttonIcon {
+    width: 28px;
 }
 
 #videoButton {
@@ -436,6 +440,19 @@ footer .navItems {
         display: flex;
         justify-content: space-between;
         margin-top: -24px;
+    }
+
+    #overlay {
+
+        top: 280px;
+        background-color: rgba(0, 0, 0, 0.35);
+
+    }
+
+    .sixColText {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .cardBox {

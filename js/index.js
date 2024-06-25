@@ -2,13 +2,14 @@
 $("#videoButton").on("click", function () {
     $(".videoBox").toggleClass("active");
   if ($(".videoBox").hasClass("active")) {
-    $(".videoBox").slidedown();
-    /*$(".searchIcon").removeClass("fa-search").addClass("fa-times");
-  */}
+    $("#buttonIcon").attr('src',"./images/minus-icon.png");
+    $(".videoBox").slidedown(600, swing);
+    
+  }
   else {
-    $(".videoBox").slideup();
-   /* $(".searchIcon").removeClass("fa-times").addClass("fa-search");
-  */}
+    $("#buttonIcon").attr('src',"./images/plus-icon.png");
+    $(".videoBox").slideup(600, swing);
+  }
 });
 
 $(".toggle").click(function(){
