@@ -21,7 +21,9 @@
 
 p, li {
     font-family: "Trebuchet MS", Tahoma, sans-serif;
+    font-size: 20px;
   }
+
 
   li {
     margin-bottom: 12px;
@@ -126,7 +128,7 @@ p, li {
     justify-content:flex-start;
     align-items: center;
     background-image: url(../images/color-background-orange-left.png);
-    opacity: 0.95;
+    opacity: 0.92;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -201,8 +203,8 @@ p, li {
 }
 
 .projects h5 {
-    margin-top: 8px;
-    margin-bottom: 0px;
+    margin-top: 12px;
+    margin-bottom: 8px;
 }
 
 .projectsTitle {
