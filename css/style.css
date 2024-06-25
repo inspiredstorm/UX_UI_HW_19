@@ -150,13 +150,25 @@ p, li {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 0px 0px var(--cardRadius) var(--cardRadius);
     top: 200px;
-    left: 36px;
+    left: 44px;
     mix-blend-mode: overlay;
 }
 
 /* Style for all section titles */
 .title {
     text-align: center;
+}
+
+.sixColText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 28px;
+    margin-bottom: 0px;
 }
 
 /* Projects section */
@@ -223,8 +235,21 @@ p, li {
 }
 
 /* Skills section */
-
 .skills {
+    background-image: linear-gradient(#ac5320, #741f09);
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 48px;
+}
+
+.skills .sixColText {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Experience Section */
+.experience {
     background-image: url(../images/color-background-gradient.png);
     background-position: center;
     background-repeat: no-repeat;
