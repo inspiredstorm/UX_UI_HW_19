@@ -32,6 +32,7 @@ p, li {
   }
 
   h2 {
+    font-size: 48px;
     letter-spacing: 1px;
   }
 
@@ -42,7 +43,7 @@ p, li {
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   h5 {
@@ -51,7 +52,7 @@ p, li {
 
   h6 {
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   a {
@@ -175,20 +176,20 @@ p, li {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 72px 3fr 36px 3fr 72px;
     grid-template-areas: 
-        'leftPad title title rightPad'
-        'leftPad card1 card2 rightPad'
-        'leftPad card3 card4 rightPad';
+        'leftPad title title title rightPad'
+        'leftPad card1 center card2 rightPad'
+        'leftPad card3 center card4 rightPad';
 
-    gap: 16px;
-    padding: 24px;
+    padding: 0px;
+    margin-bottom: 36px;
 }
 
 .projects img  {
     width: 100%;
-    object-fit: contain;
-    border-radius: 8px;
+    object-fit:fill;
+    border-radius: var(--cardRadius);
 }
 
 .projects p {
@@ -222,6 +223,7 @@ p, li {
 
 .project1, .project2, .project3, .project4 {
     color: black;
+    margin-bottom: 36px;
 }
 
 .leftSpace {
@@ -238,14 +240,14 @@ p, li {
 .skills {
     background-image: linear-gradient(#ac5320, #741f09);
     color: white;
-    padding-top: 64px;
+    padding-top: 36px;
     padding-bottom: 48px;
 }
 
 .skills .sixColText {
     text-transform: uppercase;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 /* Experience Section */
@@ -254,15 +256,19 @@ p, li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 4px;
+    padding-top: 48px;
     padding-left: 36px;
     padding-right: 36px;
-    padding-bottom: 4px;
+    padding-bottom: 40px;
     margin-left: 0px;
     margin-right: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.experience .title {
+    color: white;
 }
 
 .skills .title {
@@ -310,15 +316,18 @@ p, li {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 174px;
+    
     width: 100%;
 }
 
 #upperVidBar {
+    padding-top: 80px;
+    height: 136px;
     background-color: #F3BF68;
     background-image: linear-gradient(#F3BF68, #C28F3D);
 }
 #lowerVidBar {
+    height: 174px;
     background-color: #F3BF68;
     background-image: linear-gradient(#C28F3D, #F3BF68);
 
@@ -359,6 +368,10 @@ p, li {
 
 
 
+
+
+
+
 /* Footer styles */
 
 footer {
@@ -386,15 +399,26 @@ footer {
     width: 80%;
 }
 
-.linkedin {
-    width: 44px;
-    margin-top: 16px;
-    
-}
-
 footer .navItems {
     width: 80%;
 }
+
+#contactIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 132px;
+
+}
+
+.linkedin {
+    height: 48px;
+    width: 48px;
+ }
+ 
+ .email {
+     height: 48px;
+ }
 
 /* Responsive design, breakpoint at 1012px */
 @media only screen and (max-width: 1012px) {
